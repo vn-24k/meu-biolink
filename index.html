@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vinícius Caetano | IA & Digital Branding</title>
+    <title>Vinícius Silva | IA & Digital Branding</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
@@ -19,7 +19,6 @@
             margin: 0; padding: 0; 
             font-family: 'Inter', sans-serif;
             background-color: var(--bg);
-            /* Mesh Gradient de fundo para profundidade */
             background-image: 
                 radial-gradient(at 0% 0%, rgba(0, 242, 254, 0.05) 0px, transparent 50%),
                 radial-gradient(at 100% 100%, rgba(79, 172, 254, 0.05) 0px, transparent 50%);
@@ -51,7 +50,6 @@
             object-fit: cover;
         }
 
-        /* Efeito de brilho pulsante atrás da foto */
         .profile-wrapper::after {
             content: '';
             position: absolute;
@@ -104,27 +102,14 @@
             transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); 
             display: flex; align-items: center; justify-content: center; 
             gap: 12px;
-            position: relative;
-            overflow: hidden;
         }
-
-        /* Efeito de brilho ao passar o mouse */
-        .link-card::before {
-            content: '';
-            position: absolute;
-            top: 0; left: -100%;
-            width: 100%; height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.05), transparent);
-            transition: 0.5s;
-        }
-
-        .link-card:hover::before { left: 100%; }
 
         .link-card:hover {
             background: rgba(255, 255, 255, 0.07);
             border-color: var(--primary);
             transform: scale(1.02);
             color: #fff;
+            box-shadow: 0 10px 30px rgba(0, 242, 254, 0.15);
         }
 
         .socials { 
@@ -140,23 +125,13 @@
             transition: 0.3s; 
         }
 
-        .socials a:hover { 
-            color: var(--primary); 
-            transform: translateY(-5px);
-        }
+        .socials a:hover { color: var(--primary); transform: translateY(-5px); }
 
-        /* Badge de "Online/Disponível" */
         .status-badge {
-            display: inline-flex;
-            align-items: center;
-            gap: 6px;
-            background: rgba(0, 242, 254, 0.1);
-            color: var(--primary);
-            padding: 5px 12px;
-            border-radius: 20px;
-            font-size: 0.7rem;
-            font-weight: 700;
-            margin-bottom: 15px;
+            display: inline-flex; align-items: center; gap: 6px;
+            background: rgba(0, 242, 254, 0.1); color: var(--primary);
+            padding: 5px 12px; border-radius: 20px;
+            font-size: 0.7rem; font-weight: 700; margin-bottom: 15px;
             border: 1px solid rgba(0, 242, 254, 0.2);
         }
         .dot { width: 6px; height: 6px; background: var(--primary); border-radius: 50%; box-shadow: 0 0 8px var(--primary); }
@@ -176,23 +151,26 @@
         <p>AI Strategist • Digital Branding</p>
         
         <div class="links">
-            <a href="https://meu-site-ai-coral.vercel.app/" class="link-card" target="_blank">
-                <i class="fas fa-microchip"></i> Portfólio de IA 2026
+            <a href="https://portfoliocaetano.vercel.app/" class="link-card" target="_blank">
+                <i class="fas fa-briefcase"></i> Portfólio
             </a>
-            <a href="#" class="link-card">
+            
+            <a href="https://wa.me/SEUNUMERO" class="link-card" target="_blank">
                 <i class="fab fa-whatsapp"></i> Consultoria Estratégica
             </a>
-            <a href="#" class="link-card">
+            
+            <a href="https://www.tiktok.com/@_planetnews?_r=1&_t=ZS-96HrTeM3z4U" class="link-card" target="_blank">
                 <i class="fab fa-tiktok"></i> Insights no TikTok
             </a>
-            <a href="#" class="link-card">
+            
+            <a href="mailto:seuemail@exemplo.com" class="link-card">
                 <i class="fas fa-envelope-open-text"></i> Contato Direto
             </a>
         </div>
 
         <div class="socials">
             <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="https://github.com/vn-24k"><i class="fab fa-github"></i></a>
             <a href="#"><i class="fab fa-linkedin-in"></i></a>
         </div>
     </div>
